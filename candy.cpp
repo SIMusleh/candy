@@ -6,33 +6,19 @@
 
 #include "candy.h"
 #include <string>
-
 // Constructor: initializes flavor and color
 Candy::Candy(flavorType f, colorType c) {
     flavor = f;
     color = c;
 }
-
 // Getter for flavor
-flavorType Candy::getFlavor() const {
-    return flavor;
-}
-
+flavorType Candy::getFlavor() const { return flavor; }
 // Getter for color
-colorType Candy::getColor() const {
-    return color;
-}
-
+colorType Candy::getColor() const { return color; }
 // Setter for flavor
-void Candy::setFlavor(flavorType f) {
-    flavor = f;
-}
-
+void Candy::setFlavor(flavorType f) { flavor = f; }
 // Setter for color
-void Candy::setColor(colorType c) {
-    color = c;
-}
-
+void Candy::setColor(colorType c) { color = c; }
 // Convert flavor enum to string
 std::string Candy::flavorToString() const {
     switch (flavor) {
@@ -44,7 +30,6 @@ std::string Candy::flavorToString() const {
     }
     return "";
 }
-
 // Convert color enum to string
 std::string Candy::colorToString() const {
     switch (color) {
