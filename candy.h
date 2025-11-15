@@ -25,13 +25,13 @@ enum colorType {
     AMETHYST_HAZE
 };
 
-class Candy {
+class candy {
 private:
     flavorType flavor;
     colorType color;
 
 public:
-    Candy(flavorType f, colorType c);
+    candy(flavorType f, colorType c);
     flavorType getFlavor() const;
     colorType getColor() const;
     void setFlavor(flavorType f);

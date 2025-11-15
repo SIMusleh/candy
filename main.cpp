@@ -87,6 +87,7 @@ int main() {
         }
     }
 
+    // Display final order
     cout << "\nYour order:\n";
     for (int i = 0; i < numCandies; i++) {
         cout << "#" << (i + 1) << " " << candyArray[i]->colorToString()
