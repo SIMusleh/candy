@@ -30,7 +30,7 @@ int main() {
     } while (numCandies < 1 || numCandies > 25);
 
     // Allocate dynamic array of Candy pointers
-    Candy** candyArray = new Candy*[numCandies];
+    candy** candyArray = new candy*[numCandies];
 
     for (int i = 0; i < numCandies; i++) {
         cout << "\nCandy #" << (i + 1) << " of " << numCandies << "\n";
@@ -64,7 +64,7 @@ int main() {
         } while (colorChoice < 1 || colorChoice > 5);
 
         // Create candy
-        Candy* newCandy = new Candy(static_cast<flavorType>(flavorChoice - 1),
+        candy* newCandy = new candy(static_cast<flavorType>(flavorChoice - 1),
                                     static_cast<colorType>(colorChoice - 1));
 
         // Check uniqueness
