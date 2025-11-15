@@ -1,35 +1,40 @@
-
 /* Program name: candy.cpp
  * Author: Sahar Musleh
  * Date last updated: 11/14/2025
  * Purpose: Implement the Candy class methods declared in candy.h.
  */
 
- #include "candy.h"
- #include <string>
+#include "candy.h"
+#include <string>
 
- Candy::Candy(flavorType f, colorType c) {
+// Constructor: initializes flavor and color
+Candy::Candy(flavorType f, colorType c) {
     flavor = f;
     color = c;
- }
+}
 
- flavorType Candy::getFlavor() const {
+// Getter for flavor
+flavorType Candy::getFlavor() const {
     return flavor;
- }
+}
 
- colorType Candy::getColor() const {
+// Getter for color
+colorType Candy::getColor() const {
     return color;
- }
+}
 
- void Candy::setFlavor(flavorType f) {
+// Setter for flavor
+void Candy::setFlavor(flavorType f) {
     flavor = f;
- }
+}
 
- void Candy::setColor(colorType c) {
+// Setter for color
+void Candy::setColor(colorType c) {
     color = c;
- }
+}
 
- std::string Candy::flavorToString() const; {
+// Convert flavor enum to string
+std::string Candy::flavorToString() const {
     switch (flavor) {
         case COTTON_CANDY: return "Cotton Candy";
         case WATERMELON_BURST: return "Watermelon Burst";
@@ -38,9 +43,10 @@
         case COLA: return "Cola";
     }
     return "";
- }
+}
 
- std::string Candy::colorToString() const; {
+// Convert color enum to string
+std::string Candy::colorToString() const {
     switch (color) {
         case SCARLET_BLAZE: return "Scarlet Blaze";
         case AZURE_SKY: return "Azure Sky";
@@ -49,4 +55,4 @@
         case AMETHYST_HAZE: return "Amethyst Haze";
     }
     return "";
- }
+}
